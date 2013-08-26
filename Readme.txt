@@ -1,4 +1,4 @@
-MonitorLogFolders
+Deprovision Disabled Users
 =================
 PowerShell Script that provides a menu system for exporting mailboxes from Exchange 2007.
 
