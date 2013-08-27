@@ -12,7 +12,7 @@ start-transcript -path $LogFile
 #------------------------------------------------------------------------------------------
 #                    First Stage
 # Load Disabled Users. Determine if they have CustomAttribute14 written and if not set it
-# to equal "WhenChanged" value. Disable User if not disabled
+# to equal "WhenChanged" value.
 #------------------------------------------------------------------------------------------
 Write-Host "+++++++++++++++++++++++++++++++++++++++++++`r" -foregroundcolor "yellow"
 Write-Host "Executing First Stage`r" -foregroundcolor "yellow"
@@ -78,9 +78,9 @@ foreach ($DisabledUser in $DisabledUsers)
 	foreach ($FullAccessPerm in $FullAccessPerms)
 	{
 		$User = $FullAccessPerm.User
-		If ($User -Like "*Admin*" -OR $User -Like "*Avamar*" -OR $User -Like "*CRM*" -OR $User -Like "*archive*")
+		If ($User -Like "*Admin*" -OR $User -Like "*CRM*" -OR $User -Like "*archive*")
 		{
-			#Write-Host "   Doing nothing on $User because it doesn't match"
+			#Write-Host "   Doing nothing on $User because it doesn't match`r"
 		}
 		else
 		{
