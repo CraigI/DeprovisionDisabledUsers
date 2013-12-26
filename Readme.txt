@@ -9,6 +9,7 @@ Please see: http://it-erate.com/powershell-script-automatically-deprovision-user
 Main Files
 =================
 DeprovisionDisabledUsers.ps1 - Only file needed.
+DeprovisionDisabledUsers_v2.ps1 - Adds in the ability to delete any folder defined in the user's profile path. Also will purge .V2 profiles.
 
 
 Usage
